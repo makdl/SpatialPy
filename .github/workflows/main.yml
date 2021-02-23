@@ -17,11 +17,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
-      - name: Print info
-        run: |
-         pwd
-         ls -lah
 
       - name: Build docker image
         run: docker-compose build
