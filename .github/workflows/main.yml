@@ -21,7 +21,7 @@ jobs:
       - name: Print info
         run: |
          pwd
-         ls-lah
+         ls -lah
 
       - name: Build docker image
         run: docker-compose build
