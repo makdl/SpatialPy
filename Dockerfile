@@ -8,10 +8,10 @@ RUN apt-get -o Dpkg::Options::="--force-confmiss" install --reinstall netbase
 
 USER jovyan
 
-RUN python3 -m pip install gdbgui matplotlib
+RUN python3 -m pip install gdbgui matplotlib coverage
 
 WORKDIR /home/jovyan
 
-COPY --chown=jovyan:users ./requirements.txt ./requirements.txt
+COPY --chown=jovyan:users ./ ./
 
 RUN pip install -r ./requirements.txt
