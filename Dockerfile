@@ -12,6 +12,6 @@ RUN python3 -m pip install gdbgui matplotlib coverage
 
 WORKDIR /home/jovyan
 
-COPY --chown=jovyan:users ./ ./
+COPY --chown=jovyan:users ./requirements.txt ./requirements.txt
 
 RUN pip install -r ./requirements.txt
